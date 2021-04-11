@@ -1,0 +1,49 @@
+<form  class="modificar"  #modificarForm="ngForm" (ngSubmit)="update()">
+
+<div class="registroform" >
+
+    <h3>Modifica tus datos</h3>
+    <!-- Nombre -->
+    <div class="formulario">
+        <h5>Nombre: </h5>
+        <input type="text"  #nombre="ngModel" [(ngModel)]="registro.nombre" id="nombre" name="nombre"  >
+
+    </div>
+    <!-- Apellido -->
+    <div class="formulario">
+        <h5>Apellido: </h5>
+        <input type="text" #apellido="ngModel" [(ngModel)]="registro.apellido" id="apellido" name="apellido"  >
+
+    </div>
+    <!-- Numero cel -->
+    <div class="formulario">
+        <h5>Número de Teléfono: </h5>
+        <input type="number" #telefono="ngModel" [(ngModel)]="registro.telefono" id="telefono" name="telefono"  >
+
+    </div>
+    <!-- Email -->
+    <div class="formulario">
+        <h5>Email: </h5>
+        <input type="email" #email="ngModel" [(ngModel)]="registro.email" id="email" name="email"  >
+
+    </div>
+    <!-- Dirección -->
+    <div class="formulario">
+        <h5>Dirección: </h5>
+        <input type="text" #direccion="ngModel" [(ngModel)]="registro.direccion" id="direccion" name="direccion" >
+    </div>
+    <!-- Clave -->
+    <div class="formulario">
+        <h5>Clave: </h5>
+        <input type="number" #clave="ngModel" [(ngModel)]="registro.clave" id="clave" name="clave" >
+
+    </div>
+
+    <Button  type="submit" id="botonenviar" value="Enviar" class="enviar"> Modificar </Button>
+
+    
+    
+</div>
+
+</form>
+

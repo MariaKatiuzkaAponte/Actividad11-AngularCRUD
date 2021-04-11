@@ -1,0 +1,146 @@
+<section class="registro">
+
+    <div class="fotosregistro">
+
+        <img src="../assets/Artesanos.jpg" alt="Logo artesanos de la cocina" height="250px" width="450px"
+            class="fotoreg1">
+
+        <img src="../assets/Hamburguesa.jpg" alt="fotoartisticahamburguesa" width="500px" height="400px"
+            class="fotoreg2">
+
+    </div>
+
+
+
+    <div class="registroform" >
+
+        <h3>Regístrate</h3>
+        <!-- Nombre -->
+        <div class="formulario">
+            <h5>Nombre: </h5>
+            <input type="text" [(ngModel)]="modeloRegistro.nombre" id="nombre" name="nombre" required>
+
+        </div>
+        <!-- Apellido -->
+        <div class="formulario">
+            <h5>Apellido: </h5>
+            <input type="text" [(ngModel)]="modeloRegistro.apellido" id="apellido" name="apellido" required>
+
+        </div>
+        <!-- Numero cel -->
+        <div class="formulario">
+            <h5>Número de Teléfono: </h5>
+            <input type="number" [(ngModel)]="modeloRegistro.telefono" id="celular" name="celular"  required>
+
+        </div>
+        <!-- Email -->
+        <div class="formulario">
+            <h5>Email: </h5>
+            <input type="email" [(ngModel)]="modeloRegistro.email" id="email" name="email" required>
+
+        </div>
+        <!-- Dirección -->
+        <div class="formulario">
+            <h5>Dirección: </h5>
+            <input type="text"  [(ngModel)]="modeloRegistro.direccion" id="direccion" name="direccion" required>
+        </div>
+        <!-- Crear contraseña -->
+        <div class="formulario">
+            <h5>Crear Clave: </h5>
+            <input type="number" [(ngModel)]="modeloRegistro.clave" id="clave" name="clave" required>
+
+        </div>
+
+        <Button (click)="crear()" type="submit" id="botonenviar" value="Enviar" class="enviar"> Enviar </Button>
+    
+        
+        <p class="iniciarsesion">¿Ya tienes cuenta? <a href="iniciosesion.html">Inicia Sesión</a></p>
+    </div>
+
+
+</section>
+
+
+
+<footer>
+
+    <div class="redesyubic">
+
+        <section class="redessociales">
+
+
+            <h2 class="titulosiguenos"> ¡Síguenos!</h2>
+
+            <!-- Whatsapp -->
+
+            <div class="redsocial">
+
+                <div class="iconored">
+                    <a href="https://api.whatsapp.com/send?phone=573209056457&text=Hola!%F0%9F%91%8B%20quisiera%20hacer%20un%20pedido...%20mi%20nombre%20es%20"
+                        target="_blank"> <img src="../assets/whatsapp.png" alt="iconowha" width="30px" height="30px">
+                    </a>
+                </div>
+
+                <div class="predsocial">
+
+                    <p>3209056457</p>
+
+                </div>
+
+            </div>
+
+            <!-- Facebook -->
+
+            <div class="redsocial">
+
+                <div class="iconored">
+                    <a href="https://www.facebook.com/" target="_blank"> <img src="../assets/facebook.png" alt="iconofb"
+                            width="30px" height="30px">
+                    </a>
+                </div>
+
+                <div class="predsocial">
+
+                    <p>Mulato's Bistro</p>
+
+                </div>
+
+            </div>
+
+            <!-- Instagram -->
+
+            <div class="redsocial">
+
+                <div class="iconored">
+                    <a href="https://www.instagram.com/mulatos_bistro/" target="_blank"> <img
+                            src="../assets/instagram.png" alt="iconoig" width="30px" height="30px">
+                    </a>
+                </div>
+
+                <div class="predsocial">
+
+                    <p>@Mulatos_Bistro</p>
+
+                </div>
+            </div>
+
+
+        </section>
+
+        <section class="ubicacion">
+
+            <iframe class="ubicacion2"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.8459117294947!2d-74.14594438618495!3d4.62156559664268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9f3832544f17%3A0x6d91f3060ccfceef!2sMulato&#39;s%20bistro!5e0!3m2!1ses!2sco!4v1616531766197!5m2!1ses!2sco"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+        </section>
+    </div>
+
+
+    
+
+    <div class="copy">
+        <p>Elaborado por María Katiuzka Aponte y Neil Serrano</p>
+    </div>
+
+</footer>

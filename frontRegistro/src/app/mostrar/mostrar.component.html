@@ -1,0 +1,36 @@
+<div class="mostrar">
+    <h1>Usuarios Registrados</h1>
+
+
+
+    <table class="tabla">
+        <!-- tr, luego th para las filas y td para el contenido de las filas -->
+
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Teléfono</th>
+            <th>Email</th>
+            <th>Dirección</th>
+            <th>Clave</th>
+        </tr>
+
+        <tr *ngFor="let registro of registros">
+            <!-- Aqui dice: traigame los usuarios del arreglo users -->
+            <td>{{registro.nombre}}</td>
+            <td>{{registro.apellido}}</td>
+            <td>{{registro.telefono}}</td>
+            <td>{{registro.email}}</td>
+            <td>{{registro.direccion}}</td>
+            <td>{{registro.clave}}</td>
+            <td> <button class="botonModificar" routerLink="/modificar/{{registro._id}}">Modificar</button> </td>
+            <td><button class="botonModificar" (click)="delete(registro)" >Eliminar</button></td>
+
+        </tr>
+
+
+
+
+    </table>
+
+</div>
